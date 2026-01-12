@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:"Inter", sans-serif ;
   
 }
 
@@ -26,42 +27,50 @@ nav{
   margin: 0 auto;
   padding: 0 20px;
   
+  
+  
 
   }
   .logo img{
     width: 139px;
+    padding: 16px 12px;
   }
 .menu{
+  
   display: flex;
   list-style: none;
   align-items: center;
 }
 .menu li{
   margin-left: 32px;
+  
 
 }
 .menu li a{
   text-decoration: none;
   color: #000000;
-  font-size: 24px;
-  font-weight: 365;
+  font-size: 16px;
+  font-weight: 500;
 
 
 }
 .menu li a:hover{
-   color:#28a745;
+    color: #1e40af;
 }
 .btn{
   background-color:#469165 ;
   color: white;
   border: none;
-  padding: 16px 12px;
+  padding: 12.5px 16px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: bold;
   list-style: none;
   
 
+}
+.btn:hover{
+  background-color: #1e40af;
 }
 .hero-section{
 
@@ -88,8 +97,12 @@ min-height: 100vh;
   
 }
 .badge{
+
   display: inline-block;
-  background-color: white;
+  background-color: #FFFFFF;
+
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px);
   border: 1px #dcfce7;
   padding: 8px 12px;
   border-radius: 1000px;
@@ -98,79 +111,133 @@ min-height: 100vh;
 
 
 }
+.badge :hover{
+  color: #1e40af;
+  
+}
 .badge span{
-  color:#22c55e;
-  font-size: 14px;
-  font-weight: 500;
+  color: #30b868;
+  font-size: 16px;
+  font-weight: 500px;
+  
+  
 
 }
 .badge::before{
+
+  
   content: "";
-  width: 8px;
-  height: 8px;
-  background-color: #2ecc71;
+  width: 12px;
+  height: 12px;
+  background-color: #30B868;
   border-radius: 50px;
   display: inline-block;
+  margin-right: 8px;
+  box-shadow: 0 0 8px rgba(46, 204, 113, 0,6);
+  opacity: ;
+  
+
 }
+
 .hero-content h1{
+  width: 100%;
+  max-width:770px;
+  line-height: 87px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 60px;
+  letter-spacing: 0.1em;
   color: #FFFFFF;
-  font-family:"Inter", sans-serif ;
-  font-size: 56px;
-  font-weight: 800;
+  
+  
   margin-bottom: 20px;
   line-height: 1.2;
 }
 .highlight{
+
+  
   color: #30B868;
   display: block;
 } 
 .hero-content p{
-  font-family: "Inter", sans-serif;
-  font-size: px;
+  
+  font-size: 18px;
+  
   color: #FFFFFF;
   max-width: 700px;
   margin: 0 auto 40px;
   line-height: 1.6;
+  display: block;
 }
 .button{
   display: flex;
   justify-content:center;
-  gap: 16px;
-  padding-bottom: 1px;
+  gap: 1px;
+  
 
   
   
 
+}
+.button :hover{
+  color: #1e40af;
+  
 }
 .button a{
   color: #FFFFFF;
   text-decoration: none;
-  padding: 12px 25px;
+  padding:16px 16px;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 500px;
   font-size: 16px;
   transition: 0.3s;
+}
+
+
   
 
-}
+
 .button .btn-first{
   color: #FFFFFF;
   background-color: #30B868;
   
   border: none;
-  padding: 16px 46px 16px 16px;
+
   border-radius: 4px;
+
+  
+
+
   
 }
+
+
+  
+
+
  .button .btn-second{ 
+  display: inline-flex;
+  align-items: center;
+  
   color: #FFFFFF;
   background-color: transparent;
   border: 1px solid white;
-  padding: 16px 46px 16px 16px;
   border-radius: 4px;
+  cursor: pointer;
+
+}
+.btn-second a{
+  align-items: center;
+  padding: 16px 12px;
+  gap: 10px;
+
+
+
 }
 #cards{
-  padding-top: 40px;
+  
+  padding: 40px;
   
 }
 .cards-container{
@@ -187,15 +254,16 @@ min-height: 100vh;
   padding-bottom: 44px;
 
 }
-.cards-container h2{
+.section-heading h2{
   font-size: 48px;
   font-weight: bold;
-  font-family: "Inter", sans-serif;
   padding-bottom: 16px;
 }
-.cards-heading p{
+.section-heading p{
+  color: #627382;
   font-size: 16px;
   padding-bottom: 44px;
+  
 }
 .cards-box{
   display: flex;
@@ -219,13 +287,12 @@ min-height: 100vh;
 }
 .card h4{
   font-size: 24px;
-  font-family: "Inter", sans-serif;
   padding: 14px 24px;
   color: #001931;
 }
 .card p{
   font-size: 16px;
-  color: #62732;
+  color: black;
 
 }
 .solution{
@@ -255,7 +322,7 @@ min-height: 100vh;
   font-size: 16px;
   font-weight: 500px;
   line-height: 20px;
-  font-family: "Inter", sans-serif;
+  
   
   
 }
@@ -263,7 +330,7 @@ min-height: 100vh;
   padding-bottom: 16px;
   padding-top: 16px;
   color: #001931;
-  font-family: "Inter", sans-serif;
+  
   font-size: 48px;
   font-family: 700px;
 
@@ -274,13 +341,12 @@ min-height: 100vh;
   font-size: 16px;
   font-weight: 400px;
   line-height: 20px;
-  font-family:"Inter", sans-serif ;
+  
 
 }
 .features-list{
   padding-top: 40px;
   list-style-type: none;
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600px;
   
@@ -290,31 +356,18 @@ min-height: 100vh;
   align-items: center;
   margin-bottom: 16px;
   position: relative;
+  gap: 12px;
+
   
 }
-.features-list li::bofore{
-  content:"✔";
-  font-size: 24px;
-  font-weight: bold;
+.features-list img{
+  width: 16.25px;
+  height: 16.25px;
   
-
-
-}
-.check{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 12px;
-  height: 12px;
-  background-color: #30B868;
-  color: #FFFFFF;
-  border-radius: 50%;
-  margin-right: 12px;
-  font-size: 8px;
-
 }
 .cta-section{
-  padding: 120px;
+  padding-top: 40px;
+  padding-bottom: 120px;
 }
 .cta-container{
   width: 85%;
@@ -324,6 +377,7 @@ min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 .cta-heading{
   text-align: center;
@@ -332,7 +386,6 @@ min-height: 100vh;
 }
 .cta-heading h2{
   padding-top: 80px;
-  font-family: "Inter", sans-serif;
   font-size: 40px;
   font-weight: 700px;
   color: #000000;
@@ -341,7 +394,6 @@ min-height: 100vh;
   color: #627382;
   padding-top: 16px;
   padding-bottom: 24px;
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400px;
   line-height: 24px;
@@ -353,7 +405,7 @@ min-height: 100vh;
   text-align: center;
   cursor: pointer;
   color: #FFFFFF;
-  padding: 16.5px 38px 16.5px 16px;
+  padding: 16.5px 16px;
   border: 0;
   
 
@@ -365,4 +417,51 @@ min-height: 100vh;
   color: #627382;
   padding-bottom: 80px;
   padding-top: 16px;
+}
+.footer-container{
+  background-color: #00122e;
+  color: white;
+  padding:60px 8% 30px 8% ;
+
+
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.footer-logo{
+  padding-left: 120px;
+}
+.social-section{
+  padding-right: 227px;
+}
+.social-title{
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 500px;
+  
+  color: #FFFFFF;
+}
+
+.footer-line{
+  border: 0;
+  border-top: 1px solid #1e293b;
+  margin-bottom: 35px;
+  margin: 0 auto;
+
+  opacity: 0.5;
+  max-width: 1360px;
+  align-items: center;
+}
+.footer-bottom{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #fafafa;
+  line-height: 24px;
+}
+.copy{
+  padding-top: 30px;
 }
